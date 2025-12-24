@@ -4,6 +4,7 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
 import { getOrInit } from "../utils/mockdata";
 import { addEvent } from "../utils/auditLog";   // ⭐ NEW (added)
+import { logoutUser } from "../firebase";
 
 const AppContext = createContext();
 
@@ -42,10 +43,9 @@ export function AppProvider({ children }) {
   // -------------------------------------------------------
   // LOGOUT FUNCTION  (Same as yours) + audit added
   // -------------------------------------------------------
-  function logout() {
-    // ⭐ NEW: Audit Log Entry
-    addEvent("logout", user || null, {});
-
+  async function logout(){
+    await signOut(auth);
+    addEvent("logout", user||null, {});
     setUser(null);
     localStorage.removeItem("credlock_user");
   }

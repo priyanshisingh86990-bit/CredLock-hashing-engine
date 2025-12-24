@@ -1,0 +1,723 @@
+
+.home {
+  background: linear-gradient(135deg, #061a3a, #0a2e73);
+  color: #fff;
+  font-family: Inter, sans-serif;
+}
+
+.hero-logo {
+  width: 90px;          /* clean, professional */
+  margin-bottom: 14px;
+  filter: drop-shadow(0 6px 18px rgba(0,0,0,0.35));
+}
+
+/* HOME HEADER ONLY */
+.home-header {
+  height: 82px;
+  padding: 0 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #071b3d, #0a2e73);
+}
+
+.home-nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.home-lock {
+  font-size: 26px;
+}
+
+.home-brand {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.home-nav-right a {
+  margin-left: 28px;
+  color: #cfe2ff;
+  font-weight: 500;
+}
+
+.home-nav-right a:hover {
+  color: #ffffff;
+}
+
+
+/* HERO */
+.hero {
+  background:linear-gradient(180deg,#0a2e73,#0b3a8f);
+  min-height: calc(100vh-80px);
+  padding: 80px 0 60px;
+  padding-bottom:40px;
+  display:flex;
+  align-items:center;
+  flex-direction:column;
+  text-align: center;
+}
+.hero-desc{
+    max-width:900px;
+    text-align:center;
+}
+
+.hero-logo {
+  width: 150px;
+}
+
+.hero-topline {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #7dd3fc;
+  letter-spacing: 1px;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin: 10px 0;
+}
+
+.hero-sub {
+  max-width: 720px;
+  margin: auto;
+  opacity: 0.9;
+}
+
+.hero-actions {
+  margin-top: 30px;
+}
+/* WHAT IS CREDLOCK SECTION */
+.whatIsSection {
+  margin-top: 0;
+  padding-top: 60px;
+  background: linear-gradient(180deg, #071a33 0%, #071a33 100%);
+  padding: 110px 8%;
+  color: #ffffff;
+}
+
+.whatIsContent {
+  max-width: 900px;
+  margin-bottom: 70px;
+}
+
+.whatIsContent h2 {
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 26px;
+}
+
+.whatIsContent p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #d6e6ff;
+}
+
+/* STATS GRID */
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+/* FLOAT ANIMATION */
+@keyframes floatY {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* STAT CARD */
+.statCard {
+  background: linear-gradient(160deg, #0b2c5a, #071d3a);
+  border-radius: 18px;
+  padding: 36px 24px;
+  text-align: center;
+
+  border: 1px solid #1e4fa3;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.65);
+
+  animation: floatY 6s ease-in-out infinite;
+  transition: all 0.35s ease;
+}
+
+.statCard h3 {
+  font-size: 38px;
+  margin-bottom: 8px;
+  color: #7cc4ff;
+}
+
+.statCard span {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  color: #cfe4ff;
+}
+
+/* STAGGER FLOAT */
+.statCard:nth-child(1) { animation-delay: 0s; }
+.statCard:nth-child(2) { animation-delay: 0.8s; }
+.statCard:nth-child(3) { animation-delay: 1.6s; }
+.statCard:nth-child(4) { animation-delay: 2.4s; }
+
+/* HOVER GLOW */
+.statCard:hover {
+  transform: translateY(-20px) scale(1.06);
+  box-shadow:
+    0 0 40px rgba(120, 180, 255, 0.85),
+    0 35px 90px rgba(0, 0, 0, 0.9);
+  border-color: #7cc4ff;
+}
+
+/* BUTTONS */
+button {
+  padding: 12px 28px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  margin: 8px;
+}
+
+.primary {
+  background: #38bdf8;
+  color: #061a3a;
+}
+
+.secondary {
+  background: transparent;
+  border: 1px solid #38bdf8;
+  color: white;
+}
+
+.outline {
+  background: transparent;
+  border: 1px solid #fff;
+  color: white;
+}
+
+/* SECTIONS */
+.section {
+  margin:0;
+  padding: 120px 40px;
+  text-align: center;
+}
+
+.section.dark {
+  background: #071f4a;
+}
+
+.section-text {
+  max-width: 900px;
+  margin: auto;
+  opacity: 0.9;
+  line-height: 1.7;
+}
+/* FLOW */
+.flow {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.flow-step {
+  padding: 30px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 18px;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: rgba(255,255,255,0.08);
+  padding: 35px;
+  border-radius: 20px;
+  min-width: 260px;
+}
+/* HERO BUTTON FIX (NO BLACK ON BLACK) */
+.primary-btn {
+  background: #2dd4ff;
+  color: #071b3d;
+  border: none;
+}
+
+.primary-btn:hover {
+  background: #1fbde4;
+  color: #071b3d;
+  box-shadow: 0 0 14px rgba(45, 212, 255, 0.6);
+  transform: translateY(-2px);
+}
+
+.secondary-btn {
+  background: transparent;
+  color: #2dd4ff;
+  border: 1px solid #2dd4ff;
+}
+
+.secondary-btn:hover {
+  background: rgba(45, 212, 255, 0.15);
+  color: #ffffff;
+  box-shadow: 0 0 12px rgba(45, 212, 255, 0.5);
+}
+/* INTRO CARDS */
+.intro-cards {
+  margin-top: 60px;
+  display: flex;
+  gap: 28px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* INTRO CARDS */
+.intro-cards {
+  margin-top: 50px;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.intro-card {
+  width: 230px;
+  padding: 22px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.06);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.intro-card h4 {
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.intro-card p {
+  color: #cfe2ff;
+  font-size: 14px;
+}
+
+.intro-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 0 28px rgba(45, 212, 255, 0.25);
+}
+
+.intro-card.highlight {
+  border: 1px solid #2dd4ff;
+}
+
+
+.intro-card h4 {
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.intro-card p {
+  color: #cfe2ff;
+  font-size: 14px;
+}
+
+.intro-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 0 28px rgba(45, 212, 255, 0.25);
+}
+
+.intro-card.highlight {
+  border: 1px solid #2dd4ff;
+}
+/* WHY CREDLOCK MATTERS */
+
+.why-matters-section {
+  
+  margin-top: -1px;   /* STRIP KILLER */
+  margin-bottom: 0;
+  
+  width: 100%;
+  padding: 100px 8%;
+  padding-bottom: 120px; /* clean end */
+  background: linear-gradient(180deg, #071a3d 0%, #0a2e73 100%);
+}
+
+.why-matters-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* LEFT SIDE */
+.why-left {
+  color: #ffffff;
+}
+
+.why-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
+.why-desc {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #d6e4ff;
+  margin-bottom: 20px;
+}
+
+/* RIGHT CARDS */
+.why-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.why-card {
+  background: #071a3d;
+  border-radius: 16px;
+  padding: 28px;
+  color: #ffffff;
+  transition: all 0.35s ease;
+  animation: floatCard 5s ease-in-out infinite;
+}
+
+.why-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.why-card p {
+  font-size: 0.95rem;
+  color: #cfe0ff;
+}
+
+/* HOVER EFFECT */
+.why-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 0 35px rgba(0, 170, 255, 0.6);
+}
+
+/* FLOATING ANIMATION */
+@keyframes floatCard {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .why-matters-container {
+    grid-template-columns: 1fr;
+  }
+}
+/* ================================
+   HOW CREDLOCK WORKS SECTION
+================================ */
+
+.how-works-section {
+  background: #0b1f3a;   /* SAME dark blue – no random strip */
+  padding: 120px 0;
+}
+
+.how-works-container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.how-works-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.how-works-desc {
+  font-size: 1.05rem;
+  color: #cfdcff;
+  max-width: 900px;
+  margin-bottom: 18px;
+  line-height: 1.7;
+}
+
+/* Cards Layout */
+.how-works-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 60px;
+}
+
+/* Individual Card */
+.work-card {
+  background: #0f2a4f;   /* DARK card */
+  border-radius: 20px;
+  padding: 32px;
+  color: #eaf2ff;
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+/* Floating + Glow */
+.work-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 0 40px rgba(0, 180, 255, 0.35);
+}
+
+/* Card Heading */
+.work-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+/* Card Text */
+.work-card p {
+  font-size: 0.95rem;
+  color: #cfdcff;
+  line-height: 1.6;
+}
+.who-uses {
+  padding: 100px 8%;
+  background: linear-gradient(180deg, #0b1220, #0e1b33);
+  text-align: center;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 60px;
+  color: #ffffff;
+}
+
+.who-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+}
+
+.who-card {
+  background: #111c33;
+  border-radius: 18px;
+  padding: 35px 28px;
+  color: #dbe6ff;
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.who-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 0 35px rgba(0, 170, 255, 0.35);
+}
+
+.who-card h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.who-card p {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  opacity: 0.9;
+}
+
+.who-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
+  padding: 10px 22px;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+  background: #00b4ff;
+  color: #02131f;
+  border: none;
+}
+
+.btn.primary:hover {
+  background: #00d0ff;
+}
+
+.btn.secondary {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #00b4ff;
+}
+
+.btn.secondary:hover {
+  background: rgba(0, 180, 255, 0.15);
+}
+.contact-section {
+  padding: 120px 8%;
+  background: linear-gradient(180deg, #0e1b33, #0b1220);
+  color: #ffffff;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.contact-left h2 {
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+
+.contact-left p {
+  font-size: 16px;
+  line-height: 1.7;
+  opacity: 0.9;
+  margin-bottom: 35px;
+}
+
+.contact-info div {
+  margin-bottom: 18px;
+}
+
+.contact-info span {
+  font-weight: 600;
+  color: #00b4ff;
+}
+
+.contact-info p {
+  margin-top: 5px;
+  opacity: 0.85;
+}
+
+/* Form */
+
+.contact-form {
+  background: #111c33;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 0 40px rgba(0, 180, 255, 0.15);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin-bottom: 18px;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: none;
+  background: #0b1220;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #9bb0d3;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  background: #00b4ff;
+  color: #02131f;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #00d0ff;
+  box-shadow: 0 0 20px rgba(0, 208, 255, 0.6);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+}
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+.hero-logo {
+  animation: float 4s ease-in-out infinite;
+}
+
+.hero-content {
+  animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.primary-btn {
+  transition: all 0.3s ease;
+}
+
+.primary-btn:hover {
+  box-shadow: 0 0 20px rgba(72, 202, 228, 0.7);
+  transform: translateY(-2px);
+}
+.stat-card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.hero-section {
+  background-size: 200% 200%;
+  animation: gradientMove 8s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.reveal {
+  transition: all 0.9s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.hero-section.reveal {
+  transition-delay: 0.2s;
+}
